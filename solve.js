@@ -11,6 +11,7 @@ console.log(isPalindrome("madaam")); // true
 console.log(isPalindrome("hello")); // false
 
 
+// problem 2
 
 function fibonacci(n) {
   const result = [0, 1];
@@ -24,12 +25,35 @@ function fibonacci(n) {
 console.log(fibonacci(5)); // [0, 1, 1, 2, 3]
 
 
+
+
+// problem 3
 function reverseString(str) {
   return str.split('').reverse().join('');
 }
 
-// Example Usage
+
 console.log(reverseString("hello")); // "olleh"
 
 
+
+// problem 4
+
+function factorial(n) {
+  return n <= 1 ? 1 : n * factorial(n - 1);
+}
+
+
+console.log(factorial(5)); // 120
+
+
+
+// problem 5
+
+function largestNumber(arr) {
+  return Math.max(...arr);
+}
+
+// Example Usage
+console.log(largestNumber([4, 1, 8, 7, 2])); // 8
 
