@@ -7,7 +7,7 @@ function isPalindrome(str) {
 }
 
 
-console.log(isPalindrome("madaam")); // true
+console.log(isPalindrome("madam")); // true
 console.log(isPalindrome("hello")); // false
 
 
@@ -57,3 +57,12 @@ function largestNumber(arr) {
 // Example Usage
 console.log(largestNumber([4, 1, 8, 7, 2])); // 8
 
+
+// problem 6
+
+function removeDuplicates(arr) {
+  return [...new Set(arr)];
+}
+
+
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4])); // [1, 2, 3, 4]
