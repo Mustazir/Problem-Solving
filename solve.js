@@ -66,3 +66,15 @@ function removeDuplicates(arr) {
 
 
 console.log(removeDuplicates([1, 2, 2, 3, 4, 4])); // [1, 2, 3, 4]
+
+// problem 7
+
+
+function isAnagram(str1, str2) {
+  const format = str => str.toLowerCase().split('').sort().join('');
+  return format(str1) === format(str2);
+}
+
+// Example Usage
+console.log(isAnagram("listen", "silent")); // true
+console.log(isAnagram("hello", "world")); // false

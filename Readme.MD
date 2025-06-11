@@ -15,7 +15,7 @@ isPalindrome("madam"); // true
 isPalindrome("hello"); // false
 ```
 
-###2. Fibonacci Sequence
+### 2. Fibonacci Sequence
 Generate the first n numbers of the Fibonacci sequence.
 
 **Example:**
@@ -23,7 +23,7 @@ Generate the first n numbers of the Fibonacci sequence.
 fibonacci(5); // [0, 1, 1, 2, 3]
 ```
 
-###3. Reverse a String
+### 3. Reverse a String
 Create a function to reverse a given string.
 
 **Example:**
@@ -31,7 +31,7 @@ Create a function to reverse a given string.
 reverseString("hello"); // "olleh"
 ```
 
-4. Factorial Calculation
+### 4. Factorial Calculation
 Write a function to calculate the factorial of a number.
 
 **Example:**
@@ -39,7 +39,7 @@ Write a function to calculate the factorial of a number.
 factorial(5); // 120
 ```
 
-5. Find the Largest Number
+### 5. Find the Largest Number
 Given an array of numbers, find the largest number.
 
 **Example:**
@@ -49,7 +49,7 @@ findLargest([3, 7, 2, 9, 1]); // 9
 
 ## Intermediate Level
 
-6. Array Deduplication
+### 6. Array Deduplication
 Write a function to remove duplicate values from an array.
 
 **Example:**
@@ -57,7 +57,7 @@ Write a function to remove duplicate values from an array.
 removeDuplicates([1, 2, 2, 3, 4, 4]); // [1, 2, 3, 4]
 ```
 
-7. Anagram Checker
+### 7. Anagram Checker
 Create a function to check if two strings are anagrams.
 
 **Example:**
@@ -67,7 +67,7 @@ isAnagram("hello", "world"); // false
 
 ```
 
-8. FizzBuzz
+### 8. FizzBuzz
 ```
 Print numbers from 1 to 100:
 
@@ -78,7 +78,7 @@ For multiples of 5, print "Buzz".
 For multiples of both, print "FizzBuzz".
 ```
 
-9. Sum of Digits
+### 9. Sum of Digits
 Write a function to calculate the sum of all digits in a number.
 **Example:**
 
@@ -90,7 +90,7 @@ sumOfDigits(123); // 6
 ## Advanced Level
 
 
-10. Custom Map Function
+### 10. Custom Map Function
 Implement a function that works like the Array.prototype.map() method.
 
 **Example:**
