@@ -54,7 +54,7 @@ function largestNumber(arr) {
   return Math.max(...arr);
 }
 
-// Example Usage
+ 
 console.log(largestNumber([4, 1, 8, 7, 2])); // 8
 
 
@@ -75,7 +75,7 @@ function isAnagram(str1, str2) {
   return format(str1) === format(str2);
 }
 
-// Example Usage
+ 
 console.log(isAnagram("listen", "silent")); // true
 console.log(isAnagram("hello", "world")); // false
 
@@ -97,5 +97,16 @@ function fizzBuzz() {
   }
 }
 
-// Example Usage
+
 fizzBuzz();
+
+
+// problem 9
+
+function sumOfDigits(num) {
+  return num.toString().split('').reduce((sum, digit) => sum + parseInt(digit), 0);
+}
+
+// Example Usage
+console.log(sumOfDigits(123)); // 6
+
