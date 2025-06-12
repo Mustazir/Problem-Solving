@@ -107,6 +107,18 @@ function sumOfDigits(num) {
   return num.toString().split('').reduce((sum, digit) => sum + parseInt(digit), 0);
 }
 
-// Example Usage
+
 console.log(sumOfDigits(123)); // 6
 
+// Problem 10
+
+function customMap(array, callback) {
+  const result = [];
+  for (let i = 0; i < array.length; i++) {
+    result.push(callback(array[i], i, array));
+  }
+  return result;
+}
+
+
+console.log(customMap([1, 2, 3], x => x * 2)); // [2, 4, 6]
