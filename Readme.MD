@@ -99,3 +99,14 @@ Implement a function that works like the Array.prototype.map() method.
 customMap([1, 2, 3], x => x * 2); // [2, 4, 6]
 
 ```
+
+### 11. Deep Object Comparison
+Create a function to deeply compare two objects for equality.
+
+**Example:**
+
+```
+deepEqual({ a: 1, b: 2 }, { a: 1, b: 2 }); // true
+deepEqual({ a: 1 }, { a: 1, b: 2 }); // false
+
+```
