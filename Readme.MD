@@ -110,3 +110,12 @@ deepEqual({ a: 1, b: 2 }, { a: 1, b: 2 }); // true
 deepEqual({ a: 1 }, { a: 1, b: 2 }); // false
 
 ```
+
+### 12. Implement Reduce Function
+Write a custom implementation of the Array.prototype.reduce() method.
+Example:
+
+```
+customReduce([1, 2, 3], (acc, val) => acc + val, 0); // 6
+
+```

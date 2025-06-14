@@ -156,3 +156,38 @@ console.log(deepEqual({ a: 1, b: 2 }, { a: 1, b: 2 })); // true
 console.log(deepEqual({ a: 1, b: 2 }, { a: 1, b: 3 })); // false
 console.log(deepEqual({ a: 1, b: { c: 2 } }, { a: 1, b: { c: 2 } })); // true
 console.log(deepEqual({ a: 1 }, { a: 1, b: 2 })); // false
+
+
+// Problem 12
+
+function deepEqual(obj1, obj2) {
+  // If both values are strictly equal, they are equal
+  if (obj1 === obj2) return true;
+
+  // If either value is not an object, they are not equal
+  if (typeof obj1 !== "object" || typeof obj2 !== "object" || obj1 === null || obj2 === null) {
+    return false;
+  }
+
+  // Get the keys of both objects
+  const keys1 = Object.keys(obj1);
+  const keys2 = Object.keys(obj2);
+
+  // If they have a different number of keys, they are not equal
+  if (keys1.length !== keys2.length) return false;
+
+  // Recursively check each key and value
+  for (let key of keys1) {
+    if (!keys2.includes(key) || !deepEqual(obj1[key], obj2[key])) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+// Test Cases
+console.log(deepEqual({ a: 1, b: 2 }, { a: 1, b: 2 })); // true
+console.log(deepEqual({ a: 1, b: 2 }, { a: 1, b: 3 })); // false
+console.log(deepEqual({ a: 1, b: { c: 2 } }, { a: 1, b: { c: 2 } })); // true
+console.log(deepEqual({ a: 1 }, { a: 1, b: 2 })); // false
