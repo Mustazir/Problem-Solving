@@ -120,7 +120,7 @@ customReduce([1, 2, 3], (acc, val) => acc + val, 0); // 6
 
 ```
 
-###  16. Even or Odd Checker
+###  13. Even or Odd Checker
 Write a function to check if a number is even or odd.
 Example:
 
@@ -131,7 +131,7 @@ checkEvenOdd(7); // "Odd"
 
 ```
 
-###  17. Convert Celsius to Fahrenheit
+###  14. Convert Celsius to Fahrenheit
 Create a function to convert Celsius to Fahrenheit.
 Example:
 
@@ -141,3 +141,16 @@ celsiusToFahrenheit(0); // 32
 celsiusToFahrenheit(25); // 77
 
 ```
+
+
+### 15.Count Vowels in a String
+Write a function to count the number of vowels in a string.
+
+Example:
+
+```
+countVowels("hello"); // 2
+countVowels("javascript"); // 3
+
+```
+

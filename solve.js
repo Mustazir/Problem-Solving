@@ -206,3 +206,10 @@ function celsiusToFahrenheit(celsius) {
   return (celsius * 9/5) + 32;
 }
 console.log(celsiusToFahrenheit(0));
+
+// Problem 15
+
+function countVowels(str) {
+  return (str.match(/[aeiou]/gi) || []).length;
+}
+console.log(countVowels("hello"));
