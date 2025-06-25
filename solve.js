@@ -7,8 +7,8 @@ function isPalindrome(str) {
 }
 
 
-console.log(isPalindrome("madam")); // true
-console.log(isPalindrome("hello")); // false
+console.log(isPalindrome("madam"));  
+console.log(isPalindrome("hello")); 
 
 
 // problem 2
@@ -22,7 +22,7 @@ function fibonacci(n) {
 }
 
  
-console.log(fibonacci(5)); // [0, 1, 1, 2, 3]
+console.log(fibonacci(5));
 
 
 
@@ -33,8 +33,7 @@ function reverseString(str) {
 }
 
 
-console.log(reverseString("hello")); // "olleh"
-
+console.log(reverseString("hello")); 
 
 
 // problem 4
@@ -44,7 +43,7 @@ function factorial(n) {
 }
 
 
-console.log(factorial(5)); // 120
+console.log(factorial(5)); 
 
 
 
@@ -55,7 +54,7 @@ function largestNumber(arr) {
 }
 
  
-console.log(largestNumber([4, 1, 8, 7, 2])); // 8
+console.log(largestNumber([4, 1, 8, 7, 2])); 
 
 
 // problem 6
@@ -65,7 +64,7 @@ function removeDuplicates(arr) {
 }
 
 
-console.log(removeDuplicates([1, 2, 2, 3, 4, 4])); // [1, 2, 3, 4]
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4])); 
 
 // problem 7
 
@@ -76,8 +75,8 @@ function isAnagram(str1, str2) {
 }
 
  
-console.log(isAnagram("listen", "silent")); // true
-console.log(isAnagram("hello", "world")); // false
+console.log(isAnagram("listen", "silent"));  
+console.log(isAnagram("hello", "world")); 
 
 
 
@@ -108,7 +107,7 @@ function sumOfDigits(num) {
 }
 
 
-console.log(sumOfDigits(123)); // 6
+console.log(sumOfDigits(123)); 
 
 // Problem 10
 
@@ -121,7 +120,7 @@ function customMap(array, callback) {
 }
 
 
-console.log(customMap([1, 2, 3], x => x * 2)); // [2, 4, 6]
+console.log(customMap([1, 2, 3], x => x * 2)); 
 
 // Problem 11
 
@@ -152,31 +151,29 @@ function deepEqual(obj1, obj2) {
 }
 
 
-console.log(deepEqual({ a: 1, b: 2 }, { a: 1, b: 2 })); // true
-console.log(deepEqual({ a: 1, b: 2 }, { a: 1, b: 3 })); // false
-console.log(deepEqual({ a: 1, b: { c: 2 } }, { a: 1, b: { c: 2 } })); // true
-console.log(deepEqual({ a: 1 }, { a: 1, b: 2 })); // false
+console.log(deepEqual({ a: 1, b: 2 }, { a: 1, b: 2 }));  
+console.log(deepEqual({ a: 1, b: 2 }, { a: 1, b: 3 })); 
+console.log(deepEqual({ a: 1, b: { c: 2 } }, { a: 1, b: { c: 2 } }));  
+console.log(deepEqual({ a: 1 }, { a: 1, b: 2 })); 
 
 
 // Problem 12
 
 function deepEqual(obj1, obj2) {
-  // If both values are strictly equal, they are equal
+ 
   if (obj1 === obj2) return true;
 
-  // If either value is not an object, they are not equal
+  
   if (typeof obj1 !== "object" || typeof obj2 !== "object" || obj1 === null || obj2 === null) {
     return false;
   }
 
-  // Get the keys of both objects
+  
   const keys1 = Object.keys(obj1);
   const keys2 = Object.keys(obj2);
 
-  // If they have a different number of keys, they are not equal
-  if (keys1.length !== keys2.length) return false;
 
-  // Recursively check each key and value
+  if (keys1.length !== keys2.length) return false;
   for (let key of keys1) {
     if (!keys2.includes(key) || !deepEqual(obj1[key], obj2[key])) {
       return false;
@@ -186,8 +183,18 @@ function deepEqual(obj1, obj2) {
   return true;
 }
 
-// Test Cases
-console.log(deepEqual({ a: 1, b: 2 }, { a: 1, b: 2 })); // true
-console.log(deepEqual({ a: 1, b: 2 }, { a: 1, b: 3 })); // false
-console.log(deepEqual({ a: 1, b: { c: 2 } }, { a: 1, b: { c: 2 } })); // true
-console.log(deepEqual({ a: 1 }, { a: 1, b: 2 })); // false
+
+console.log(deepEqual({ a: 1, b: 2 }, { a: 1, b: 2 })); 
+console.log(deepEqual({ a: 1, b: 2 }, { a: 1, b: 3 })); 
+console.log(deepEqual({ a: 1, b: { c: 2 } }, { a: 1, b: { c: 2 } })); 
+console.log(deepEqual({ a: 1 }, { a: 1, b: 2 })); 
+
+
+
+// Problem 13
+
+function checkEvenOdd(num) {
+  return num % 2 === 0 ? "Even" : "Odd";
+}
+console.log(checkEvenOdd(4));
+console.log(checkEvenOdd(5));

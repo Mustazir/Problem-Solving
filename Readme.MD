@@ -119,3 +119,14 @@ Example:
 customReduce([1, 2, 3], (acc, val) => acc + val, 0); // 6
 
 ```
+
+###  16. Even or Odd Checker
+Write a function to check if a number is even or odd.
+Example:
+
+
+```
+checkEvenOdd(4); // "Even"
+checkEvenOdd(7); // "Odd"
+
+```
