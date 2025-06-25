@@ -130,3 +130,14 @@ checkEvenOdd(4); // "Even"
 checkEvenOdd(7); // "Odd"
 
 ```
+
+###  17. Convert Celsius to Fahrenheit
+Create a function to convert Celsius to Fahrenheit.
+Example:
+
+
+```
+celsiusToFahrenheit(0); // 32
+celsiusToFahrenheit(25); // 77
+
+```

@@ -198,3 +198,11 @@ function checkEvenOdd(num) {
 }
 console.log(checkEvenOdd(4));
 console.log(checkEvenOdd(5));
+
+
+// Problem 14
+
+function celsiusToFahrenheit(celsius) {
+  return (celsius * 9/5) + 32;
+}
+console.log(celsiusToFahrenheit(0));
