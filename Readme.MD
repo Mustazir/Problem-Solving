@@ -154,3 +154,12 @@ countVowels("javascript"); // 3
 
 ```
 
+### 16.Count Words in a Sentence
+Write a function that counts the number of words in a given sentence.
+
+Example:
+```
+countWords("I love JavaScript"); // 3
+```
+### 17.Find the Second Largest Number
+Write a function that returns the second largest number in an array.

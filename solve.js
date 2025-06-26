@@ -213,3 +213,11 @@ function countVowels(str) {
   return (str.match(/[aeiou]/gi) || []).length;
 }
 console.log(countVowels("hello"));
+
+
+// Problem 16
+
+function secondLargest(arr) {
+  let unique = [...new Set(arr)].sort((a, b) => b - a);
+  return unique[1];
+}
