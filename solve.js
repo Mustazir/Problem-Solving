@@ -221,3 +221,10 @@ function secondLargest(arr) {
   let unique = [...new Set(arr)].sort((a, b) => b - a);
   return unique[1];
 }
+
+// Problem17
+
+function secondLargest(arr) {
+  let unique = [...new Set(arr)].sort((a, b) => b - a);
+  return unique[1];
+}
