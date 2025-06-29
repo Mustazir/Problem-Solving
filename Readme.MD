@@ -163,3 +163,15 @@ countWords("I love JavaScript"); // 3
 ```
 ### 17.Find the Second Largest Number
 Write a function that returns the second largest number in an array.
+
+### 18. Check if All Elements Are Equal
+Write a function to check if all elements in an array are the same.
+
+Example:
+```
+allEqual([5, 5, 5]); // true
+allEqual([1, 2, 1]); // false
+
+```
+
+

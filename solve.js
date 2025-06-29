@@ -228,3 +228,10 @@ function secondLargest(arr) {
   let unique = [...new Set(arr)].sort((a, b) => b - a);
   return unique[1];
 }
+
+
+// Problem18
+
+function allEqual(arr) {
+  return arr.every(val => val === arr[0]);
+}
