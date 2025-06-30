@@ -229,9 +229,3 @@ function secondLargest(arr) {
   return unique[1];
 }
 
-
-// Problem18
-
-function allEqual(arr) {
-  return arr.every(val => val === arr[0]);
-}
